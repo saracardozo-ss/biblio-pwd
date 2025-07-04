@@ -251,8 +251,117 @@ text-align: center;
 
 
 
-.plantilla4 article {
+.plantilla5 article {
     margin-left: 120px;
     padding: 1em;
     overflow: hidden;
 }
+
+
+.plantilla5{
+    width: 600px;
+    margin: 20px;
+    padding: 10px;
+    font-family: verdana;
+    margin: 2px;
+    padding: 2px;
+    background-color:rgb(255, 100, 211);
+    letter-spacing: 0px;
+    word-spacing: 0.08em;
+    line-height: 18px;
+}
+.plantilla5 h1 {
+     color: white;
+}
+.plantilla5 a {
+     color: white;
+	 padding: 10px;
+	 background-color:rgba(100, 115, 255, 0.9);
+}
+
+.plantilla5 header {
+height: 60px;
+background-color:rgb(246, 255, 0);
+margin-top:50px;
+margin-bottom:50px;
+padding: 4px;
+padding-top: 10px;
+text-align: center;
+}
+
+.plantilla5 footer {
+background-color:rgba(0, 255, 55, 0.9);
+margin-left: 20px;
+margin-right: 20px;
+margin-top:50px;
+margin-bottom:50px;
+text-align: center;
+}
+
+
+
+.plantilla5 article {
+    margin-left: 120px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+
+
+.plantilla6 article {
+    margin-left: 120px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+
+.plantilla6{
+    width: 600px;
+    margin: 20px;
+    padding: 10px;
+    font-family: verdana;
+    margin: 2px;
+    padding: 2px;
+    background-color:rgb(159, 6, 6);
+    letter-spacing: 0px;
+    word-spacing: 0.08em;
+    line-height: 18px;
+}
+.plantilla6 h1 {
+     color: white;
+}
+.plantilla6 a {
+     color: white;
+	 padding: 10px;
+	 background-color:rgba(255, 100, 237, 0.9);
+}
+
+.plantilla6 header {
+height: 60px;
+background-color:rgb(195, 115, 115);
+margin-top:50px;
+margin-bottom:50px;
+padding: 4px;
+padding-top: 10px;
+text-align: center;
+}
+
+.plantilla6 footer {
+background-color:rgba(89, 9, 9, 0.9);
+margin-left: 20px;
+margin-right: 20px;
+margin-top:50px;
+margin-bottom:50px;
+text-align: center;
+}
+
+
+
+.plantilla6 article {
+    margin-left: 120px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+
+

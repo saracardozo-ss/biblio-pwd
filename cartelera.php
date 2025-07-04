@@ -6,7 +6,6 @@ include_once("libreria/carteles.php");
 
 $cats=Cartel::categorias();
 
-
 echo '
 <div class="container-fluid" >
 

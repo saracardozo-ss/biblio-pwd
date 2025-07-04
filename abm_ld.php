@@ -116,8 +116,10 @@ if (!empty($_POST)) {
 	  <?php 
 		if (isset($_SESSION['username']) && $_SESSION['rol']=='administrador'){
 		 echo '<button type="button" class="btn btn-primary  btn-sm"   onclick="cargar(\'#capa_d\',\'alta_d.php\')">Alta</button>';
-	    
+
+	    echo '<a href="libros_imp.php" class="btn btn-secondary btn-sm" style="margin-left: 10px;">Impresos</a>';
 		}
+		
 	  ?>
        
 	  </ul>      

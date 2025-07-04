@@ -15,6 +15,8 @@ echo '
         <li><a href="#"><span onclick="cargar(\'#capa_C\',\'txts/tecnologias.html\')">Tecnologias</span></a></li>
         <li><a href="#"><span onclick="cargar(\'#capa_C\',\'txts/proyectos.html\')">Proyectos</a></span></li>
 		<li><a href="#"><span onclick="cargar(\'#capa_C\',\'txts/referencias.html\')">Referencias</a></span></li>
+		<li><a href="#"><span onclick="cargar(\'#capa_C\',\'txts/multimedia.html\')">Material Multimedia</span></a></li>
+
            
 	  </ul>
 	  </div>

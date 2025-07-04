@@ -1,20 +1,25 @@
 <?php
-session_start();
+//session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
  <head>
    <title>BASES PWD</title>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
-   <script src="bootstrap/js/jquery-3.1.0.min.js"></script>
-   <script src="bootstrap/js/bootstrap.min.js"></script>
-   <script src="bootstrap/js/funciones_gral.js"></script>
-   <link rel="stylesheet" href="bootstrap/css/style_chat.css" media="all"/>	
-   <link rel="stylesheet" href="bootstrap/ui/jquery-ui.css">
-   <link rel="stylesheet" href="bootstrap/cust.css">
-   <script src="bootstrap/ui/jquery-ui.js"></script>
+ <!-- Meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="bootstrap/css/style_chat.css" media="all">
+<link rel="stylesheet" href="bootstrap/cust.css">
+<script src="bootstrap/js/funciones_gral.js"></script>
+
      
    <!-----https://sourcecodesite.com/how-to-create-chat-system-in-php-using-ajax-2.html--->
    <!--Include Custom CSS-->
@@ -65,9 +70,14 @@ pre {
    <nav class="navbar navbar-inverse navbar-static-top navbar2" role="navigation" >
     
       <ul class="nav navbar-nav ">
-        <li><a href="index.php"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="index.php"><!--<span class="glyphicon glyphicon-home"></span>-->
+      <img src="mi_logo.png" alt="Logo" style="height: 40px; margin-top: -4px;">
+      Brisa
+      </a></li>
 		<li><a href="cartelera.php">Cartelera</a></li>
 		<li><a href="abm_ld.php">Libros</a></li>
+    <li><a href="ayuda.php">Ayuda</a></li>
+
 		<?php 
 		if (isset($_SESSION['username']) && $_SESSION['rol']=='administrador'){
 		 echo '<li><a href="abm_p.php">Usuarios</a></li>';
@@ -109,7 +119,14 @@ pre {
 	 
    </nav>
   
-
+<?php if (isset($_SESSION['username']) && $_SESSION['rol'] == 'administrador'): ?>
+  <div class="panel panel-default" style="margin: 15px;">
+    <div class="panel-heading"><strong>Usuarios conectados (tiempo real)</strong></div>
+    <div class="panel-body" id="onlineUsersList">
+      Cargando...
+    </div>
+  </div>
+<?php endif; ?>
   
   
  

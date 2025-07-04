@@ -103,6 +103,9 @@ if (!empty($_POST)) {
 		  <option>Audio</option>
 		  <option>AudioTexto</option>
 		  <option>Otros</option>
+		  <option>Impresos</option>
+
+
 	   </select>
 	 </div>  
 	 </div>   

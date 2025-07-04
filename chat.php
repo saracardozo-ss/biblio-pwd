@@ -1,7 +1,7 @@
 <br>
 <?php 
 	
-	include("libreria/db_chat.php");
+	include_once("libreria/config.php");
 	
 	$query = "SELECT * FROM ( SELECT * FROM chat order by id DESC LIMIT 3) sub order by id ASC";
 	$run = $con->query($query);
