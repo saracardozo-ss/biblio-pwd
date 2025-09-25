@@ -22,6 +22,7 @@ var socket;
 var alias = "";
 
 function init() {
+    // Apuntar a la IP/Puerto configurado en el contructor del WebServerSocket, que es donde está escuchando el socket.
     var host = "ws://localhost:9000"; 
     try {
         socket = new WebSocket(host);
@@ -83,7 +84,7 @@ function reconnect() {
     init();
 }
 
-// Utils
+// Utilities
 function $(id) { return document.getElementById(id); }
 function log(msg) { $("log").innerHTML += "<br>" + msg; }
 function onkey(event) { if (event.keyCode == 13) { send(); } }
